@@ -2,13 +2,9 @@
 
 import re
 import sys
-from .base import AipBase
-from .base import base64
-from .base import json
-from .base import urlencode
-from .base import quote
-from .base import Image
-from .base import StringIO
+
+from .base import AipBase, Image, StringIO, base64, json, quote, urlencode
+
 
 class AipFace(AipBase):
     """
@@ -293,4 +289,3 @@ class AipFace(AipBase):
         data['group_id'] = groupId
 
         return self._request(self.__deleteGroupUserUrl, data)
-

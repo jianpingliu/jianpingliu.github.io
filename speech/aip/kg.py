@@ -5,6 +5,7 @@
 """
 from .base import AipBase
 
+
 class AipKg(AipBase):
     """
         Aip KG

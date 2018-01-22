@@ -3,16 +3,18 @@
 """
     AipBase
 """
+import base64
+import datetime
+import hashlib
 import hmac
 import json
-import hashlib
-import datetime
-import base64
-import time
 import sys
+import time
+
 import requests
 from PIL import Image
 from requests import session
+
 requests.packages.urllib3.disable_warnings()
 
 

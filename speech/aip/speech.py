@@ -4,10 +4,8 @@
     Speech
 """
 
-from .base import AipBase
-from .base import base64
-from .base import hashlib
-from .base import json
+from .base import AipBase, base64, hashlib, json
+
 
 class AipSpeech(AipBase):
     """
@@ -93,6 +91,3 @@ class AipSpeech(AipBase):
             return result
 
         return result['content']
-
-
-
